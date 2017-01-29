@@ -280,8 +280,8 @@
           </div>
         </div>
         <div class="footer-center">
-          <p class="address">г. Москва, ул. Строителей, 15</p>
-          <div class="footer-nav">
+          <p class="footer-center-item address">г. Москва, ул. Строителей, 15</p>
+          <div class="footer-center-item footer-nav">
             <ul>
               <li class="footer-nav-item">
                 <a href="#">Доставка</a>
@@ -294,7 +294,7 @@
               </li>
             </ul>
           </div>
-          <p class="phone-number">Тел: +7 (495) 495-95-95</p>
+          <p class="footer-center-item phone-number">Тел: +7 (495) 495-95-95</p>
         </div>
         <div class="footer-bottom">
           <div class="decor"></div>
@@ -309,5 +309,24 @@
         </div>
       </div>
     </footer>
+    <div class="modal-content">
+      <button class="modal-content-close" type="button" title="Закрыть">
+      Закрыть</button>
+      <form class="login-form clearfix" action="form.php" method="post">
+        <div class="name-user">
+          <label for="name-field">Ваше имя:</label>
+          <input id="name-field" class="name-please" type="text" name="forename" placeholder="Представьтесь, пожалуйста" required>
+        </div>
+        <div class="email-user">
+          <label for="email-field">Ваш e-mail:</label>
+          <input id="email-field" class="email-please" type="text" name="email" placeholder="Для отправки ответа" required>
+        </div>
+        <div class="message-user">
+          <label for="message-field">Текст письма:</label>
+          <textarea id="message-field" name="message" placeholder="В свободной форме" rows="5" required></textarea>
+        </div>
+        <button class=" btn btn-user" type="submit">Отправить</button>
+      </form>
+    </div>
   </body>
 </html>
