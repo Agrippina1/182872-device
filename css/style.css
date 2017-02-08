@@ -138,6 +138,7 @@ a {
 .btn {
   position: relative;
   display: inline-block;
+  vertical-align: top;
   font-family: "Gilroy", Helvetica, Arial, sans-serif;
   font-size: 18px;
   line-height: 20px;
@@ -383,6 +384,7 @@ nav {
 }
 .nav-bottom li {
   display: inline-block;
+  vertical-align: top;
 }
 .catalog-product {
   position: relative;
@@ -529,6 +531,9 @@ nav {
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
+}
+.slide:nth-child(2) p {
+  width: 460px;
 }
 .slide-btn {
   width: 220px;
@@ -710,7 +715,7 @@ nav {
 .service-slide-title p {
   margin: 0;
   padding: 0;
-  width: 450px;
+  width: 445px;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
@@ -748,6 +753,7 @@ nav {
 }
 .partners a {
   display: inline-block;
+  vertical-align: top;
   margin-right: 35px;
   opacity: 0.2;
 }
@@ -1083,6 +1089,7 @@ nav {
 }
 .price-controls label {
   display: inline-block;
+  vertical-align: top;
   width: 45%;
   font-family: "Gilroy", Helvetica, Arial, sans-serif;
   font-size: 14px;
@@ -1261,6 +1268,7 @@ input[type="radio"] + label:active::before {
 .catalog-item {
   position: relative;
   display: inline-block;
+  vertical-align: top;
   cursor: pointer;
   margin-right: 40px;
   margin-bottom: 51px;
@@ -1314,7 +1322,10 @@ input[type="radio"] + label:active::before {
   font-weight: 800;
   color: #000000;
   letter-spacing: 0.01em;
-  width: 260px;
+  width: 256px;
+}
+.catalog-item:nth-child(2) .item-name {
+  width: 237px;
 }
 .about-item .item-price {
   font-family: "Gilroy", Helvetica, Arial, sans-serif;
@@ -1402,6 +1413,15 @@ input[type="radio"] + label:active::before {
   margin-right: 21px;
 }
 .pagination .active {
+  opacity: 1;
+}
+.pagination-page:hover {
+  opacity: 0.6;
+}
+.pagination-page:active {
+  opacity: 1;
+}
+.pagination .active:hover {
   opacity: 1;
 }
 .pagination-page-wrap {
@@ -1573,8 +1593,10 @@ input[type="radio"] + label:active::before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
-.decor::before {
+.footer-social::before {
   content: "";
   position: absolute;
   width: 80px;
@@ -1583,30 +1605,33 @@ input[type="radio"] + label:active::before {
   left: 0;
   top: 17px;
 }
-.decor {
-  margin-right: 505px;
-}
 .footer-social {
-  margin-top: 6px;
-  margin-right: 469px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 200px;
+  margin-right: 437px;
+  margin-left: 506px;
 }
 .social-btn {
-  width: 38px;
-  height: 38px;
+  width: 40px;
+  height: 40px;
   font-size: 0;
-  padding: 20px;
-  margin-right: 10px;
+  margin-right: 14px;
+  margin-bottom: 14px;
 }
 .social-btn-fb {
-  background: url("../img/sprite.png") no-repeat -24px -622px;
+  background: url("../img/sprite.png") no-repeat -25px -622px;
   opacity: 0.3;
 }
 .social-btn-inst {
-  background: url("../img/sprite.png") no-repeat -24px -710px;
+  background: url("../img/sprite.png") no-repeat -25px -710px;
   opacity: 0.3;
 }
 .social-btn-twit {
-  background: url("../img/sprite.png") no-repeat -24px -864px;
+  background: url("../img/sprite.png") no-repeat -25px -864px;
   opacity: 0.3;
 }
 .social-btn-fb:hover,
@@ -1621,6 +1646,7 @@ input[type="radio"] + label:active::before {
 }
 .logo-academy {
   position: relative;
+  width: 28px;
   margin-top: 3px;
 }
 .logo-academy a::before {
@@ -1674,7 +1700,7 @@ input[type="radio"] + label:active::before {
   box-shadow: 0 10px 20px 0 rgba(4, 6, 6, 0.2);
   z-index: 20;
   margin-left: -482px;
-  padding: 100px 100px 78px 100px;
+  padding: 100px 100px 77px 100px;
 }
 .modal-content-show {
   display: block;
@@ -1751,17 +1777,17 @@ input[type="radio"] + label:active::before {
   border: 3px solid #f2f2f2;
 }
 .login-form input[type="text"] {
-  width: 334px;
-  padding-left: 20px;
+  width: 338px;
+  padding-left: 16px;
   padding-top: 12px;
   padding-bottom: 13px;
   margin-top: 10px;
 }
 textarea {
-  width: 732px;
-  padding-left: 20px;
+  width: 736px;
+  padding-left: 16px;
   padding-top: 12px;
-  padding-bottom: 50px;
+  padding-bottom: 47px;
   margin-top: 10px;
   margin-bottom: 37px;
 }
@@ -1774,7 +1800,6 @@ textarea {
 .login-form textarea:focus {
   background: #ffffff;
   border: 3px solid #e5e5e5;
-  box-sizing: border-box;
 }
 .btn-user {
   width: 200px;
